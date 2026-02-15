@@ -1,0 +1,10 @@
+footer {
+    background: var(--wood);
+}
+
+.footer__menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.4rem;
+}

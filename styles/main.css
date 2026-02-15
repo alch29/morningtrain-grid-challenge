@@ -5,5 +5,59 @@
 
 :root {
     --off-white: #f9f7f0;
+    --charcoal: #0e1719;
+    --wood: #6e5137;
+    --rain: #3c507d;
+    --headline-font: "Abhaya Libre", serif;
+    --text-font: "Pontano Sans", sans-serif;
     --card-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    font-family: var(--headline-font);
+    font-weight: 700;
+    color: var(--rain);
+    font-size: 1.35em;
+}
+
+p {
+    font-family: var(--text-font);
+    font-weight: 400;
+}
+
+.list-item {
+    font-family: var(--headline-font);
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.list-item--dark,
+.p--dark {
+    color: var(--charcoal);
+}
+
+.list-item--light,
+.p--light {
+    color: var(--off-white);
+}
+
+.logo {
+    font-family: var(--headline-font);
+    font-weight: 700;
+    color: var(--wood);
+    font-size: 2.2em;
+    cursor: pointer;
+}
+
+.link {
+    color: var(--rain);
+    font-family: var(--text-font);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.link:hover {
+    opacity: 0.7;
 }
