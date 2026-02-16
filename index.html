@@ -7,11 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Pontano+Sans:wght@300..700&display=swap" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/variables.css" rel="stylesheet">
     <link href="styles/grid.css" rel="stylesheet">
     <link href="styles/card.css" rel="stylesheet">
+    <link href="styles/modal.css" rel="stylesheet">
     <link href="styles/header.css" rel="stylesheet">
     <link href="styles/footer.css" rel="stylesheet">
-    <title>Upcoming events and exhibitions</title>
+    <title>Events & exhibitions</title>
 </head>
 <body>
     <header>
@@ -31,64 +33,76 @@
         <section class="grid">
             <article class="card">
                 <img class="card__image card--horisontal" src="images/pawel-czerwinski-NTYYL9Eb9y8-unsplash – stor.jpeg" alt="Contemporary Nordic abstract art at the exhibition Northern Lights: Abstract Expressions">
-                <div class="card__text card--horisontal">
+                <div class="card__content card--horisontal">
                     <p class="p--dark">February 20 - April 10, 2026</p>
                     <hr>
-                    <h3>Northern Lights: Abstract Expressions</h3>
+                    <h2>Northern Lights: Abstract Expressions</h2>
                     <p class="p--dark">Experience the vibrant interplay of color and emotion in this showcase of contemporary Nordic abstract art.</p>
                     <p class="link">Read more</p>
                 </div>
             </article>
             <article class="card">
                 <img class="card__image card--horisontal" src="images/aedrian-salazar-wrEHW8QaeYw-unsplash – stor.jpeg">
-                <div class="card__text card--horisontal">
+                <div class="card__content card--horisontal">
                     <p class="p--dark">March 8, 15, 2026 | 14:00 - 17:00</p>
                     <hr>
-                    <h3>Sculptural Visions Workshop</h3>
+                    <h2>Sculptural Visions Workshop</h2>
                     <p class="p--dark">Join renowned sculptor Maria Andersen for a hands-on exploration of modern sculpting techniques.</p>
                     <p class="link">Read more</p>
                 </div>
             </article>
             <article class="card">
                 <img class="card__image card--vertical" src="images/beatriz-braga-LNMv5jJRvso-unsplash – stor.jpeg">
-                <div class="card__text card--vertical">
+                <div class="card__content card--vertical">
                     <p class="p--dark">April 15 - July 20, 2026</p>
                     <hr>
-                    <h3>Minimalism in Motion</h3>
+                    <h2>Minimalism in Motion</h2>
                     <p class="p--dark">Digital installations and kinetic sculptures that challenge our perception of space and time.</p>
                     <p class="link">Read more</p>
                 </div>
             </article>
             <article class="card">
                 <img class="card__image card--vertical" src="images/dawid-tkocz-G2X2RRTtrCA-unsplash – stor.jpeg">
-                <div class="card__text card--vertical">
+                <div class="card__content card--vertical">
                     <p class="p--dark">April 20 - June 14, 2026</p>
                     <hr>
-                    <h3>Urban Perspectives</h3>
+                    <h2>Urban Perspectives</h2>
                     <p class="p--dark">A photographic journey through Copenhagen's hidden architectural gems and street life.</p>
                     <p class="link">Read more</p>
                 </div>
             </article>
             <article class="card">
                 <img class="card__image card--horisontal" src="images/suzanne-boureau-vG9Y8YvzdSQ-unsplash – stor.jpeg">
-                <div class="card__text card--horisontal">
+                <div class="card__content card--horisontal">
                     <p class="p--dark">April 28 - July 30, 2026</p>
                     <hr>
-                    <h3>Ceramic Traditions Reimagined</h3>
+                    <h2>Ceramic Traditions Reimagined</h2>
                     <p class="p--dark">Contemporary artists breathe new life into classical Danish ceramic heritage.</p>
                     <p class="link">Read more</p>
                 </div>
             </article>
             <article class="card">
                 <img class="card__image card--horisontal" src="images/europeana-PZJixVMUCSA-unsplash – stor.jpeg">
-                <div class="card__text card--horisontal">
+                <div class="card__content card--horisontal">
                     <p class="p--dark">August 12, 19, 26, 2026 | 10:00 - 13:00</p>
                     <hr>
-                    <h3>Portrait Masterclass Series</h3>
+                    <h2>Portrait Masterclass Series</h2>
                     <p class="p--dark">Three-part workshop exploring lighting, composition, and emotional depth in portraiture.</p>
                     <p class="link">Read more</p>
                 </div>
             </article>
+        </section>
+        <section class="modal">
+            <div class="modal__content">
+                <button class="modal__close-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24"><path fill="none" stroke="var(--rain)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12L7 7m5 5l5 5m-5-5l5-5m-5 5l-5 5"/></svg>
+                </button>
+                <img class="modal__image">
+                <p class="modal__date"></p>
+                <hr>
+                <h1 class="modal__title"></h1>
+                <p class="modal__description"></p>
+            </div>
         </section>
     </main>
     <footer>
@@ -110,3 +124,4 @@
     </footer>
 </body>
 </html>
+<script src="scripts/modal.js"></script>

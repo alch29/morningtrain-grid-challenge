@@ -2,7 +2,7 @@
     border-radius: 0.4rem;
     overflow: hidden;
     background: var(--off-white);
-    box-shadow: var(--card-shadow);
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -20,7 +20,7 @@
     max-height: 18rem;
 }
 
-.card__text {
+.card__content {
     padding: 1.8rem;
     display: flex;
     flex-direction: column;
