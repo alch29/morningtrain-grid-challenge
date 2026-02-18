@@ -1,15 +1,51 @@
 header {
     background: var(--off-white);
-    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 7.5% 0 7.5%
+    padding: 2rem 7.5%;
 }
 
 .header__menu {
+    display: none;
     list-style: none;
     padding: 0;
+    gap: 1.8rem;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    background: var(--off-white);
+}
+
+.header__menu.open {
     display: flex;
-    gap: 1.4rem;
+}
+
+.header__hamburger-icon {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.header__hamburger-icon:hover {
+    opacity: var(--hover-opacity);
+}
+
+@media screen and (min-width: 1100px) {
+    .header__menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+    }
+
+    .header__hamburger-icon {
+        display: none;
+    }
 }

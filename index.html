@@ -22,17 +22,20 @@
         </span>
         <nav>
             <menu class="header__menu">
-                <li class="menu__list-item">HOME</li>
-                <li class="menu__list-item">ABOUT US</li>
-                <li class="menu__list-item">EVENTS & EXHIBITIONS</li>
-                <li class="menu__list-item">CONTACT</li>
+                <li class="list-item list-item--dark">HOME</li>
+                <li class="list-item list-item--dark">ABOUT US</li>
+                <li class="list-item list-item--dark">EVENTS & EXHIBITIONS</li>
+                <li class="list-item list-item--dark">CONTACT</li>
             </menu>
+            <div class="header__hamburger-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 16 16"><path fill="none" stroke="var(--wood)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg>
+            </div>
         </nav>
     </header>
     <main>
         <section class="grid">
             <article class="card">
-                <img class="card__image card--horisontal" src="images/pawel-czerwinski-NTYYL9Eb9y8-unsplash – stor.jpeg" alt="Contemporary Nordic abstract art at the exhibition Northern Lights: Abstract Expressions">
+                <img class="card__image card--horisontal" src="images/pawel-czerwinski-NTYYL9Eb9y8-unsplash – stor.jpeg" alt="Abstract art from the exhibition Northern Lights: Abstract Expressions">
                 <div class="card__content card--horisontal">
                     <p class="p--dark">February 20 - April 10, 2026</p>
                     <hr>
@@ -42,7 +45,7 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__image card--horisontal" src="images/aedrian-salazar-wrEHW8QaeYw-unsplash – stor.jpeg">
+                <img class="card__image card--horisontal" src="images/aedrian-salazar-wrEHW8QaeYw-unsplash – stor.jpeg" alt="Maria Andersen sculpting in clay.">
                 <div class="card__content card--horisontal">
                     <p class="p--dark">March 8, 15, 2026 | 14:00 - 17:00</p>
                     <hr>
@@ -52,7 +55,7 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__image card--vertical" src="images/beatriz-braga-LNMv5jJRvso-unsplash – stor.jpeg">
+                <img class="card__image card--vertical" src="images/beatriz-braga-LNMv5jJRvso-unsplash – stor.jpeg" alt="Digital installation from the Minimalism in Motion exhibition.">
                 <div class="card__content card--vertical">
                     <p class="p--dark">April 15 - July 20, 2026</p>
                     <hr>
@@ -62,7 +65,7 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__image card--vertical" src="images/dawid-tkocz-G2X2RRTtrCA-unsplash – stor.jpeg">
+                <img class="card__image card--vertical" src="images/dawid-tkocz-G2X2RRTtrCA-unsplash – stor.jpeg" alt="Photograph of pedestrian crossing in Copenhagen from the Urban Perspectives exhibition.">
                 <div class="card__content card--vertical">
                     <p class="p--dark">April 20 - June 14, 2026</p>
                     <hr>
@@ -72,7 +75,7 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__image card--horisontal" src="images/suzanne-boureau-vG9Y8YvzdSQ-unsplash – stor.jpeg">
+                <img class="card__image card--horisontal" src="images/suzanne-boureau-vG9Y8YvzdSQ-unsplash – stor.jpeg" alt="A set of ceramics from the Ceramic Traditions Reimagined exhibition.">
                 <div class="card__content card--horisontal">
                     <p class="p--dark">April 28 - July 30, 2026</p>
                     <hr>
@@ -82,7 +85,7 @@
                 </div>
             </article>
             <article class="card">
-                <img class="card__image card--horisontal" src="images/europeana-PZJixVMUCSA-unsplash – stor.jpeg">
+                <img class="card__image card--horisontal" src="images/shiva-mardahi-PD7S6usMuq4-unsplash – stor.jpeg" alt="Portrait of woman by photographer Thomas Nielsen.">
                 <div class="card__content card--horisontal">
                     <p class="p--dark">August 12, 19, 26, 2026 | 10:00 - 13:00</p>
                     <hr>
@@ -109,19 +112,20 @@
         <nav>
             <menu class="footer__menu">
                 <li class="list-item list-item--light">HOME</li>
-                <li class="list-item">ABOUT US</li>
-                <li class="list-item">EVENTS & EXHIBITIONS</li>
-                <li class="list-item">CONTACT</li>
+                <li class="list-item list-item--light">ABOUT US</li>
+                <li class="list-item list-item--light">EVENTS & EXHIBITIONS</li>
+                <li class="list-item list-item--light">CONTACT</li>
             </menu>
         </nav>
         <div>
-            <ul>
-                <li class="list-item">Odensevej 20, 5000 Odense</li>
-                <li class="list-item">+(45)20 20 20 20</li>
-                <li class="list-item">info@aleksgallery.com</li>
+            <ul class="footer__info-list">
+                <li class="list-item list-item--light">Odensevej 20, 5000 Odense</li>
+                <li class="list-item list-item--light">+(45) 20 20 20 20</li>
+                <li class="list-item list-item--light">info@aleksgallery.com</li>
             </ul>
         </div>
     </footer>
 </body>
 </html>
+<script src="scripts/menu.js"></script>
 <script src="scripts/modal.js"></script>

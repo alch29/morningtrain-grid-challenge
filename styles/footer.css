@@ -1,10 +1,22 @@
 footer {
     background: var(--wood);
+    padding: 3rem 7.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    align-items: center;
 }
 
-.footer__menu {
+.footer__menu, .footer__info-list{
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 1.4rem;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+@media screen and (min-width: 700px) {
+    footer {
+        flex-direction: row;
+    }
 }
