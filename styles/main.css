@@ -22,6 +22,10 @@ p {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+}
+
 .list-item {
     font-family: var(--headline-font);
     font-size: 1.2em;

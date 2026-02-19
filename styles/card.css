@@ -45,10 +45,6 @@
         grid-column: 1 / 2;
         grid-row: 3 / 5;
     }
-
-    .card--vertical {
-        height: 50%;
-    }
     
     .card--horisontal {
         width: 50%;
